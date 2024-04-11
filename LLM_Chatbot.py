@@ -3,7 +3,7 @@ from langchain.llms import OpenAI
 
 # Function to get the answer from OpenAI
 def get_answer_from_open_ai(question: str) -> str:
-    openai_api_key = "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"  # OpenAI API key
+    openai_api_key = " "  # OpenAI API key
     llm = OpenAI(model_name='text-davinci-003', temperature=0, openai_api_key=openai_api_key)
     return llm(question)
 
